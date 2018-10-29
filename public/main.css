@@ -1,0 +1,49 @@
+body{
+  width:100vw;
+  height:100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: white;
+}
+
+div{
+  width:100vw;
+  height:100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: white;
+}
+
+.box {
+  display: grid;
+  grid-row: 2;
+  grid-column: 2;
+  color:white;
+}
+
+.background{
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+}
+
+/*body {
+  text-align: center;
+}*/
+
+
+@keyframes anima {
+
+0%{ background-color: white;}
+50% {background-color: blue;}
+100% {background-color: white;}
+
+}
+
+.triggerAnimation {
+  animation: anima 2s ;
+  animation-iteration-count: 1;
+}
